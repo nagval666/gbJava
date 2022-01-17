@@ -8,11 +8,11 @@ public class HomeWorkApp2 {
         System.out.println("N2**********");
         posOrNeg(-1);
         System.out.println("N3**********");
-        System.out.println(negative(0));
+        System.out.println(negative(-1));
         System.out.println("N4**********");
         numAndString("Hello!", 3);
         System.out.println("N5**********");
-        System.out.println(leapYear(2022));
+        System.out.println(leapYear(400));
 
     }
 
@@ -34,11 +34,12 @@ public class HomeWorkApp2 {
     }
 
     public static boolean negative(int a){
-        if (a < 0){
-            return true;
-        } else {
-            return false;
-        }
+        return a < 0;
+//        if (a < 0){
+//            return true;
+//        } else {
+//            return false;
+//        }
     }
 
     public static void numAndString(String a, int b){
@@ -48,13 +49,14 @@ public class HomeWorkApp2 {
     }
 
     public static boolean leapYear(int a){
-        if (a % 4 == 0 && a % 100 > 0){
-            return true;
-        } else if (a % 400 == 0){
-            return true;
-        } else {
-            return false;
-        }
+        return (a % 4 == 0) & (a % 100 != 0) || (a % 400 ==0);
+//        if (a % 4 == 0 && a % 100 > 0){
+//            return true;
+//        } else if (a % 400 == 0){
+//            return true;
+//        } else {
+//            return false;
+//        }
     }
 
 }
