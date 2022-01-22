@@ -6,9 +6,9 @@ public class HomeWorkApp2 {
         System.out.println("N1**********");
         System.out.println(sumTwoNum(10,10));
         System.out.println("N2**********");
-        posOrNeg(-1);
+        posOrNeg(10);
         System.out.println("N3**********");
-        System.out.println(negative(-1));
+        System.out.println(negative(-6));
         System.out.println("N4**********");
         numAndString("Hello!", 3);
         System.out.println("N5**********");
@@ -34,7 +34,7 @@ public class HomeWorkApp2 {
     }
 
     public static boolean negative(int a){
-        return a < 0;
+        return a <= 0;
 //        if (a < 0){
 //            return true;
 //        } else {
@@ -49,7 +49,7 @@ public class HomeWorkApp2 {
     }
 
     public static boolean leapYear(int a){
-        return (a % 4 == 0) & (a % 100 != 0) || (a % 400 ==0);
+        return (a % 4 == 0) && (a % 100 != 0) || (a % 400 ==0);
 //        if (a % 4 == 0 && a % 100 > 0){
 //            return true;
 //        } else if (a % 400 == 0){
